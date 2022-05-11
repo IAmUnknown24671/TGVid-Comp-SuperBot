@@ -1,9 +1,9 @@
 #    Copyright (c) 2021 Danish_00
 #    Improved By @Zylern
 
-from decouple import config
 
-try:
+
+
     APP_ID = 13484212
     API_HASH = 8c90d377feee94f58463a4e17030aa02
     BOT_TOKEN = 5251819077:AAHAEPR73ybk5nJ8YbpaSW48D5z1O00t-u8
