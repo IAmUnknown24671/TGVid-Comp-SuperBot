@@ -1,4 +1,4 @@
-name: TGVid-Comp
+name: TGVid-Comp-SuperBot
 
 on:
     push:
@@ -23,18 +23,18 @@ jobs:
            git config --global user.name ${{ secrets.GitHubName }}
            git config --global user.email ${{ secrets.GitHubMail }}
            git config --global credential.helper store
-           echo "https://Zylern:${{ secrets.GH_TOKEN }}@github.com" > ~/.git-credentials
+           echo "https://IAmUnknown24671:${{ secrets.GH_TOKEN }}@github.com" > ~/.git-credentials
            
        
        - name: cloning repo
          continue-on-error: true
          run: |
-           git clone -b main https://Zylern:${{ secrets.GH_TOKEN }}@github.com/Zylern/TGVid-Comp.git
-       - name: Running TGVid-Comp Bot 
+           git clone -b main https://IAmUnknown24671:${{ secrets.GH_TOKEN }}@github.com/IAmUnknown24671/TGVid-Comp-SuperBot.git
+       - name: Running TGVid-Comp-SuperBot 
          timeout-minutes: 358
          continue-on-error: true
          run: |
-           cd TGVid-Comp
+           cd TGVid-Comp-SuperBot
            docker build -t compressor . && docker run compressor
            
        - name: Loop workflow
